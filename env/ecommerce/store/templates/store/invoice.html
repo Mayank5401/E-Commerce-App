@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { text-align: center; }
+        .details, .products { margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Invoice</h1>
+    <div class="details">
+        <p><strong>Order ID:</strong> {{ order.id }}</p>
+        <p><strong>Date:</strong> {{ order.created_at }}</p>
+        <p><strong>Customer:</strong> {{ order.user.username }}</p>
+    </div>
+    <div class="products">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th><th>Quantity</th><th>Price</th><th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in order.items.all %}
+                <tr>
+                    <td>{{ item.product.name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.product.price }}</td>
+                    <td>{% widthratio item.quantity 1 item.product.price %}</td>
+
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td colspan="3"><strong>Total Amount</strong></td>
+                    <td><strong>{{ order.total_price }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+[
+    {
+        "model": "store.category",
+        "pk": 1,
+        "fields": {
+            "name": "Electronics"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 2,
+        "fields": {
+            "name": "Fashion"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 3,
+        "fields": {
+            "name": "Books"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 1,
+        "fields": {
+            "title": "Smartphone",
+            "description": "Latest Android smartphone with AMOLED display.",
+            "price": "699.99",
+            "category": 1,
+            "image": "products/phone.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 2,
+        "fields": {
+            "title": "Laptop",
+            "description": "Powerful laptop with SSD storage and 16GB RAM.",
+            "price": "999.99",
+            "category": 1,
+            "image": "products/laptop.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 3,
+        "fields": {
+            "title": "T-Shirt",
+            "description": "100% cotton unisex T-shirt.",
+            "price": "19.99",
+            "category": 2,
+            "image": "products/tshirt.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 4,
+        "fields": {
+            "title": "Running Shoes",
+            "description": "Lightweight and durable running shoes.",
+            "price": "49.99",
+            "category": 2,
+            "image": "products/shoes.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 5,
+        "fields": {
+            "title": "Python Programming Book",
+            "description": "A beginner-friendly guide to Python.",
+            "price": "29.99",
+            "category": 3,
+            "image": "products/book.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 6,
+        "fields": {
+            "title": "Bluetooth Headphones",
+            "description": "Noise-canceling over-ear headphones.",
+            "price": "149.99",
+            "category": 1,
+            "image": "products/headphones.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 7,
+        "fields": {
+            "title": "Denim Jacket",
+            "description": "Stylish denim jacket for all seasons.",
+            "price": "59.99",
+            "category": 2,
+            "image": "products/jacket.jpg"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 8,
+        "fields": {
+            "title": "Fantasy Novel",
+            "description": "Epic fantasy novel with dragons and magic.",
+            "price": "24.99",
+            "category": 3,
+            "image": "products/fantasyNovel.jpg"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "alice",
+            "password": "pbkdf2_sha256$...",
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "email": "alice@example.com"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "bob",
+            "password": "pbkdf2_sha256$...",
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true,
+            "email": "bob@example.com"
+        }
+    },
+    {
+        "model": "store.order",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "placed_at": "2025-04-23T05:51:02.748407+00:00",
+            "total_price": "719.98",
+            "is_paid": true,
+            "payment_method": "paypal"
+        }
+    },
+    {
+        "model": "store.order",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "placed_at": "2025-04-23T05:51:02.748407+00:00",
+            "total_price": "79.98",
+            "is_paid": false,
+            "payment_method": "cod"
+        }
+    },
+    {
+        "model": "store.orderitem",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "product": 1,
+            "quantity": 1,
+            "price": "699.99"
+        }
+    },
+    {
+        "model": "store.orderitem",
+        "pk": 2,
+        "fields": {
+            "order": 1,
+            "product": 5,
+            "quantity": 1,
+            "price": "19.99"
+        }
+    },
+    {
+        "model": "store.orderitem",
+        "pk": 3,
+        "fields": {
+            "order": 2,
+            "product": 3,
+            "quantity": 2,
+            "price": "19.99"
+        }
+    },
+    {
+        "model": "store.orderitem",
+        "pk": 4,
+        "fields": {
+            "order": 2,
+            "product": 4,
+            "quantity": 1,
+            "price": "49.99"
+        }
+    }
+]

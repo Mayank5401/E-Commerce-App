@@ -1,0 +1,79 @@
+[
+    {
+      "model": "store.category",
+      "pk": 1,
+      "fields": {
+        "name": "Electronics"
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 2,
+      "fields": {
+        "name": "Fashion"
+      }
+    },
+    {
+      "model": "store.category",
+      "pk": 3,
+      "fields": {
+        "name": "Books"
+      }
+    },
+    {
+      "model": "store.product",
+      "pk": 1,
+      "fields": {
+        "title": "Smartphone",
+        "description": "Latest Android smartphone with AMOLED display.",
+        "price": "699.99",
+        "category": 1,
+        "image": "products/phone.jpg"
+      }
+    },
+    {
+      "model": "store.product",
+      "pk": 2,
+      "fields": {
+        "title": "Laptop",
+        "description": "Powerful laptop with SSD storage and 16GB RAM.",
+        "price": "999.99",
+        "category": 1,
+        "image": "products/laptop.jpg"
+      }
+    },
+    {
+      "model": "store.product",
+      "pk": 3,
+      "fields": {
+        "title": "T-Shirt",
+        "description": "100% cotton unisex T-shirt.",
+        "price": "19.99",
+        "category": 2,
+        "image": "products/tshirt.jpg"
+      }
+    },
+    {
+      "model": "store.product",
+      "pk": 4,
+      "fields": {
+        "title": "Running Shoes",
+        "description": "Lightweight and durable running shoes.",
+        "price": "49.99",
+        "category": 2,
+        "image": "products/shoes.jpg"
+      }
+    },
+    {
+      "model": "store.product",
+      "pk": 5,
+      "fields": {
+        "title": "Python Programming Book",
+        "description": "A beginner-friendly guide to Python.",
+        "price": "29.99",
+        "category": 3,
+        "image": "products/book.jpg"
+      }
+    }
+  ]
+  
